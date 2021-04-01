@@ -1,0 +1,176 @@
+services:
+  elasticsearch:
+    container_name: elasticsearch
+    environment:
+      ES_JAVA_OPTS: -Xms512m -Xmx512m
+      discovery.type: single-node
+      xpack.monitoring.enabled: "true"
+      xpack.watcher.enabled: "false"
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.2
+    ports:
+    - published: 9200
+      target: 9200
+    volumes:
+    - elasticsearch-data:/usr/share/elasticsearch/data:rw
+  file-context-ext:
+    build:
+      context: D:\Workspace\dotnet-project-boilerplate-practice\src
+      dockerfile: Services/ContextExtractor/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: FileContextExtractor
+      target: base
+    container_name: FileContextExtractor
+    depends_on:
+      fileprocessordb:
+        condition: service_started
+      rabbitmq:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      CacheSettings:ConnectionString: fileProcessorDb:6379
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      EventBusSettings:HostAddress: amqp://guest:guest@rabbitmq:15672
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    expose:
+    - '8005'
+    image: file-context-ext:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net5.0/FileContextExtractor.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    tty: true
+    volumes:
+    - D:\Workspace\dotnet-project-boilerplate-practice\src\Services\ContextExtractor:/app:rw
+    - C:\Users\Calvin\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\Calvin\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Calvin\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - C:\Users\Calvin\.nuget\packages:/root/.nuget/packages:ro
+    - D:\Workspace\dotnet-project-boilerplate-practice\src:/src:rw
+  file-processor:
+    build:
+      context: D:\Workspace\dotnet-project-boilerplate-practice\src
+      dockerfile: Services/Basket/Basket.API/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: FileProcessor
+      target: base
+    container_name: file-processor
+    depends_on:
+      fileprocessordb:
+        condition: service_started
+      rabbitmq:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      CacheSettings:ConnectionString: fileProcessorDb:6379
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      EventBusSettings:HostAddress: amqp://guest:guest@rabbitmq:15672
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: file-processor:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net5.0/FileProcessor.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 8001
+      target: 80
+    tty: true
+    volumes:
+    - D:\Workspace\dotnet-project-boilerplate-practice\src\Services\Basket\Basket.API:/app:rw
+    - C:\Users\Calvin\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\Calvin\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Calvin\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - C:\Users\Calvin\.nuget\packages:/root/.nuget/packages:ro
+    - D:\Workspace\dotnet-project-boilerplate-practice\src:/src:rw
+  fileprocessordb:
+    container_name: fileprocessordb
+    image: redis:alpine
+    ports:
+    - published: 6379
+      target: 6379
+    restart: always
+  kibana:
+    container_name: kibana
+    depends_on:
+      elasticsearch:
+        condition: service_started
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+    image: docker.elastic.co/kibana/kibana:7.9.2
+    ports:
+    - published: 5601
+      target: 5601
+  nginx:
+    depends_on:
+      file-context-ext:
+        condition: service_started
+    image: nginx:latest
+    ports:
+    - published: 4000
+      target: 4000
+    volumes:
+    - D:\Workspace\dotnet-project-boilerplate-practice\src\nginx.conf:/etc/nginx/nginx.conf:ro
+  ocelotapigw:
+    build:
+      context: D:\Workspace\dotnet-project-boilerplate-practice\src
+      dockerfile: ApiGateways/OcelotApiGw/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: OcelotApiGw
+      target: base
+    container_name: ocelotapigw
+    depends_on:
+      file-processor:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      ElasticConfiguration:Uri: http://elasticsearch:9200
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: ocelotapigw:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net5.0/OcelotApiGw.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 8010
+      target: 80
+    tty: true
+    volumes:
+    - D:\Workspace\dotnet-project-boilerplate-practice\src\ApiGateways\OcelotApiGw:/app:rw
+    - C:\Users\Calvin\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\Calvin\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Calvin\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - C:\Users\Calvin\.nuget\packages:/root/.nuget/packages:ro
+    - D:\Workspace\dotnet-project-boilerplate-practice\src:/src:rw
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-management-alpine
+    ports:
+    - published: 5672
+      target: 5672
+    - published: 15672
+      target: 15672
+    restart: always
+version: '3.4'
+volumes:
+  elasticsearch-data: {}

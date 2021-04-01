@@ -1,0 +1,37 @@
+version: '3.4'
+
+services:
+ fileprocessordb:
+    image: redis:alpine
+
+ rabbitmq:
+    image: rabbitmq:3-management-alpine
+
+ ocelotapigw:
+    image: ${DOCKER_REGISTRY-}ocelotapigw
+    build:
+      context: .
+      dockerfile: ApiGateways/OcelotApiGw/Dockerfile 
+
+ file-processor:
+    image: ${DOCKER_REGISTRY-}file-processor
+    build:
+      context: .
+      dockerfile: Services/Basket/Basket.API/Dockerfile
+
+ file-context-ext:
+    image: ${DOCKER_REGISTRY-}file-context-ext
+    build:
+        context: .
+        dockerfile: Services/ContextExtractor/Dockerfile
+
+ elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.2
+
+ kibana:
+    image: docker.elastic.co/kibana/kibana:7.9.2
+
+volumes:
+    elasticsearch-data:
+
+
