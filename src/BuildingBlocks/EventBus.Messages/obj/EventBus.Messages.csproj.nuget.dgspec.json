@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj": {}
+    "D:\\Workspace\\sandline-project-boilerplate\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj": {}
   },
   "projects": {
-    "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj": {
+    "D:\\Workspace\\sandline-project-boilerplate\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj",
+        "projectUniqueName": "D:\\Workspace\\sandline-project-boilerplate\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj",
         "projectName": "EventBus.Messages",
-        "projectPath": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj",
+        "projectPath": "D:\\Workspace\\sandline-project-boilerplate\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj",
         "packagesPath": "C:\\Users\\Calvin\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\EventBus.Messages\\obj\\",
+        "outputPath": "D:\\Workspace\\sandline-project-boilerplate\\src\\BuildingBlocks\\EventBus.Messages\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

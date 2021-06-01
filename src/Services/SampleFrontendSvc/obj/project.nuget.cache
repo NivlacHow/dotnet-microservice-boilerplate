@@ -1,0 +1,90 @@
+{
+  "version": 2,
+  "dgSpecHash": "kGLkOOCRHG1+vKoJa3w2WrmndbVRrOVQ6NuLW3X8dQZZfx/+RDfUiMDyTdrcHlWg1m7ZOjvIZmCtTRpD2OymWQ==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\Services\\SampleFrontendSvc\\SampleFrontendSvc.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package MassTransit.AspNetCore. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "MassTransit.AspNetCore",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Swashbuckle.AspNetCore. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Swashbuckle.AspNetCore",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package MassTransit. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "MassTransit",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package MassTransit.RabbitMQ. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "MassTransit.RabbitMQ",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Serilog.Sinks.Elasticsearch. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Serilog.Sinks.Elasticsearch",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Serilog.AspNetCore. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Serilog.AspNetCore",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Serilog.Enrichers.Environment. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Serilog.Enrichers.Environment",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package RabbitMQ.Client. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "RabbitMQ.Client",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Unable to find package Newtonsoft.Json with version (>= 12.0.3)\r\n  - Found 1 version(s) in Microsoft Visual Studio Offline Packages [ Nearest version: 9.0.1 ]",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}

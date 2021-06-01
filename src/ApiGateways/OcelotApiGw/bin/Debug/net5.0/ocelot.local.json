@@ -1,15 +1,15 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/v1/FileProcessor/processFiles",
+      "DownstreamPathTemplate": "/api/v1/SampleFrontendSvc/SampleMethod",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "host.docker.internal",
-          "Port": "8001"
+          "Port": "8006"
         }
       ],
-      "UpstreamPathTemplate": "/File/startProcess",
+      "UpstreamPathTemplate": "/SampleSvc/sampleAPI",
       "UpstreamHttpMethod": [
         "POST"
       ]

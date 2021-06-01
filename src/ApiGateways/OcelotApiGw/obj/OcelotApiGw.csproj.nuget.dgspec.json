@@ -1,38 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\ApiGateways\\OcelotApiGw\\OcelotApiGw.csproj": {}
+    "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\ApiGateways\\OcelotApiGw\\OcelotApiGw.csproj": {}
   },
   "projects": {
-    "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\ApiGateways\\OcelotApiGw\\OcelotApiGw.csproj": {
+    "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\ApiGateways\\OcelotApiGw\\OcelotApiGw.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\ApiGateways\\OcelotApiGw\\OcelotApiGw.csproj",
+        "projectUniqueName": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\ApiGateways\\OcelotApiGw\\OcelotApiGw.csproj",
         "projectName": "OcelotApiGw",
-        "projectPath": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\ApiGateways\\OcelotApiGw\\OcelotApiGw.csproj",
-        "packagesPath": "C:\\Users\\Calvin\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\ApiGateways\\OcelotApiGw\\obj\\",
+        "projectPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\ApiGateways\\OcelotApiGw\\OcelotApiGw.csproj",
+        "packagesPath": "C:\\Users\\CalvinHow\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\ApiGateways\\OcelotApiGw\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Calvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CalvinHow\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
-                "projectPath": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj"
+              "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
+                "projectPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj"
               }
             }
           }
@@ -78,32 +74,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
+    "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
+        "projectUniqueName": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
         "projectName": "Common.Logging",
-        "projectPath": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
-        "packagesPath": "C:\\Users\\Calvin\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\Common.Logging\\obj\\",
+        "projectPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
+        "packagesPath": "C:\\Users\\CalvinHow\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Common.Logging\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Calvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CalvinHow\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "net5.0": {
@@ -145,14 +137,11 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

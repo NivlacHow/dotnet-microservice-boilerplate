@@ -14,8 +14,8 @@ services:
             - "5672:5672"
             - "15672:15672"
 
-    file-processor:
-        container_name: file-processor
+    sample-frontend-svc:
+        container_name: sample-frontend-svc
         environment:
            - ASPNETCORE_ENVIRONMENT=Development
            - "CacheSettings:ConnectionString=fileProcessorDb:6379"
@@ -24,9 +24,10 @@ services:
             - fileprocessordb
             - rabbitmq
         ports:
-            - "8001:80"
+            - "8006:80"
 
-    file-context-ext:
+    sample-backend-svc:
+        container_name: sample-backend-svc
         environment:
            - ASPNETCORE_ENVIRONMENT=Development
            - "CacheSettings:ConnectionString=fileProcessorDb:6379"
@@ -35,7 +36,8 @@ services:
             - fileprocessordb
             - rabbitmq
         expose:
-            - "8005"
+            - "8007"
+
 
     ocelotapigw:
         container_name: ocelotapigw
@@ -43,7 +45,7 @@ services:
             - ASPNETCORE_ENVIRONMENT=Development
             - "ElasticConfiguration:Uri=http://elasticsearch:9200"
         depends_on:
-            - file-processor
+            - sample-frontend-svc
         ports:
             - "8010:80"
 
@@ -73,6 +75,6 @@ services:
         volumes:
             - ./nginx.conf:/etc/nginx/nginx.conf:ro
         depends_on:
-            - file-context-ext
+            - sample-frontend-svc
         ports:
             - "4000:4000"

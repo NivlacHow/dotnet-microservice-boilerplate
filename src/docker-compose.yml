@@ -13,17 +13,17 @@ services:
       context: .
       dockerfile: ApiGateways/OcelotApiGw/Dockerfile 
 
- file-processor:
-    image: ${DOCKER_REGISTRY-}file-processor
-    build:
-      context: .
-      dockerfile: Services/Basket/Basket.API/Dockerfile
-
- file-context-ext:
-    image: ${DOCKER_REGISTRY-}file-context-ext
+ sample-frontend-svc:
+    image: ${DOCKER_REGISTRY-}sample-frontend-svc
     build:
         context: .
-        dockerfile: Services/ContextExtractor/Dockerfile
+        dockerfile: Services/SampleFrontendSvc/Dockerfile
+
+ sample-backend-svc:
+    image: ${DOCKER_REGISTRY-}sample-backend-svc
+    build:
+        context: .
+        dockerfile: Services/SampleBackendSvc/Dockerfile
 
  elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.9.2

@@ -1,0 +1,226 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Common.Logging/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Serilog.AspNetCore": "3.4.0",
+          "Serilog.Enrichers.Environment": "2.1.3",
+          "Serilog.Sinks.Elasticsearch": "8.4.1"
+        },
+        "compile": {
+          "bin/placeholder/Common.Logging.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Logging.dll": {}
+        }
+      },
+      "Sandline.RMQLibs/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Common.Logging": "1.0.0",
+          "Newtonsoft.Json": "12.0.3",
+          "RabbitMQ.Client": "6.2.1"
+        },
+        "compile": {
+          "bin/placeholder/Sandline.RMQLibs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sandline.RMQLibs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Common.Logging/1.0.0": {
+      "type": "project",
+      "path": "../../BuildingBlocks/Common.Logging/Common.Logging.csproj",
+      "msbuildProject": "../../BuildingBlocks/Common.Logging/Common.Logging.csproj"
+    },
+    "Sandline.RMQLibs/1.0.0": {
+      "type": "project",
+      "path": "../../BuildingBlocks/Sandline.RMQLibs/Sandline.RMQLibs.csproj",
+      "msbuildProject": "../../BuildingBlocks/Sandline.RMQLibs/Sandline.RMQLibs.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Common.Logging >= 1.0.0",
+      "MassTransit >= 7.1.5",
+      "MassTransit.AspNetCore >= 7.1.5",
+      "MassTransit.RabbitMQ >= 7.1.5",
+      "Sandline.RMQLibs >= 1.0.0",
+      "Swashbuckle.AspNetCore >= 6.0.7"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\CalvinHow\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\Services\\SampleFrontendSvc\\SampleFrontendSvc.csproj",
+      "projectName": "SampleFrontendSvc",
+      "projectPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\Services\\SampleFrontendSvc\\SampleFrontendSvc.csproj",
+      "packagesPath": "C:\\Users\\CalvinHow\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\Services\\SampleFrontendSvc\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\CalvinHow\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
+              "projectPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj"
+            },
+            "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Sandline.RMQLibs\\Sandline.RMQLibs.csproj": {
+              "projectPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Sandline.RMQLibs\\Sandline.RMQLibs.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "MassTransit": {
+            "target": "Package",
+            "version": "[7.1.5, )"
+          },
+          "MassTransit.AspNetCore": {
+            "target": "Package",
+            "version": "[7.1.5, )"
+          },
+          "MassTransit.RabbitMQ": {
+            "target": "Package",
+            "version": "[7.1.5, )"
+          },
+          "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "[6.0.7, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package MassTransit.AspNetCore. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "MassTransit.AspNetCore",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Swashbuckle.AspNetCore. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Swashbuckle.AspNetCore",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package MassTransit. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "MassTransit",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package MassTransit.RabbitMQ. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "MassTransit.RabbitMQ",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Serilog.Sinks.Elasticsearch. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Serilog.Sinks.Elasticsearch",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Serilog.AspNetCore. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Serilog.AspNetCore",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Serilog.Enrichers.Environment. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Serilog.Enrichers.Environment",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package RabbitMQ.Client. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "RabbitMQ.Client",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Unable to find package Newtonsoft.Json with version (>= 12.0.3)\r\n  - Found 1 version(s) in Microsoft Visual Studio Offline Packages [ Nearest version: 9.0.1 ]",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}

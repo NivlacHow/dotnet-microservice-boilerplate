@@ -1,31 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\Services\\ContextExtractor\\FileContextExtractor.csproj": {}
+    "C:\\Users\\CalvinHow\\WorkSpace\\dotnet-microservice-boilerplate\\src\\Services\\ContextExtractor\\FileContextExtractor.csproj": {}
   },
   "projects": {
-    "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
+    "C:\\Users\\CalvinHow\\WorkSpace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
+        "projectUniqueName": "C:\\Users\\CalvinHow\\WorkSpace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
         "projectName": "Common.Logging",
-        "projectPath": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
-        "packagesPath": "C:\\Users\\Calvin\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\Common.Logging\\obj\\",
+        "projectPath": "C:\\Users\\CalvinHow\\WorkSpace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
+        "packagesPath": "C:\\Users\\CalvinHow\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CalvinHow\\WorkSpace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Common.Logging\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Calvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CalvinHow\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "net5.0": {
@@ -67,39 +63,32 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj": {
+    "C:\\Users\\CalvinHow\\WorkSpace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj",
+        "projectUniqueName": "C:\\Users\\CalvinHow\\WorkSpace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj",
         "projectName": "EventBus.Messages",
-        "projectPath": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj",
-        "packagesPath": "C:\\Users\\Calvin\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\EventBus.Messages\\obj\\",
+        "projectPath": "C:\\Users\\CalvinHow\\WorkSpace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj",
+        "packagesPath": "C:\\Users\\CalvinHow\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CalvinHow\\WorkSpace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\EventBus.Messages\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Calvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CalvinHow\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "net5.0": {
@@ -131,42 +120,38 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\Services\\ContextExtractor\\FileContextExtractor.csproj": {
+    "C:\\Users\\CalvinHow\\WorkSpace\\dotnet-microservice-boilerplate\\src\\Services\\ContextExtractor\\FileContextExtractor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\Services\\ContextExtractor\\FileContextExtractor.csproj",
+        "projectUniqueName": "C:\\Users\\CalvinHow\\WorkSpace\\dotnet-microservice-boilerplate\\src\\Services\\ContextExtractor\\FileContextExtractor.csproj",
         "projectName": "FileContextExtractor",
-        "projectPath": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\Services\\ContextExtractor\\FileContextExtractor.csproj",
-        "packagesPath": "C:\\Users\\Calvin\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\Services\\ContextExtractor\\obj\\",
+        "projectPath": "C:\\Users\\CalvinHow\\WorkSpace\\dotnet-microservice-boilerplate\\src\\Services\\ContextExtractor\\FileContextExtractor.csproj",
+        "packagesPath": "C:\\Users\\CalvinHow\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CalvinHow\\WorkSpace\\dotnet-microservice-boilerplate\\src\\Services\\ContextExtractor\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Calvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CalvinHow\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
-                "projectPath": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj"
+              "C:\\Users\\CalvinHow\\WorkSpace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
+                "projectPath": "C:\\Users\\CalvinHow\\WorkSpace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj"
               },
-              "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj": {
-                "projectPath": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj"
+              "C:\\Users\\CalvinHow\\WorkSpace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj": {
+                "projectPath": "C:\\Users\\CalvinHow\\WorkSpace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj"
               }
             }
           }
@@ -248,7 +233,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

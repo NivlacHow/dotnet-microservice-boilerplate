@@ -12,40 +12,6 @@ services:
       target: 9200
     volumes:
     - elasticsearch-data:/usr/share/elasticsearch/data:rw
-  file-context-ext:
-    build:
-      context: D:\Workspace\dotnet-project-boilerplate-practice\src
-      dockerfile: Services/ContextExtractor/Dockerfile
-    depends_on:
-      fileprocessordb:
-        condition: service_started
-      rabbitmq:
-        condition: service_started
-    environment:
-      ASPNETCORE_ENVIRONMENT: Development
-      CacheSettings:ConnectionString: fileProcessorDb:6379
-      EventBusSettings:HostAddress: amqp://guest:guest@rabbitmq:15672
-    expose:
-    - '8005'
-    image: file-context-ext
-  file-processor:
-    build:
-      context: D:\Workspace\dotnet-project-boilerplate-practice\src
-      dockerfile: Services/Basket/Basket.API/Dockerfile
-    container_name: file-processor
-    depends_on:
-      fileprocessordb:
-        condition: service_started
-      rabbitmq:
-        condition: service_started
-    environment:
-      ASPNETCORE_ENVIRONMENT: Development
-      CacheSettings:ConnectionString: fileProcessorDb:6379
-      EventBusSettings:HostAddress: amqp://guest:guest@rabbitmq:15672
-    image: file-processor
-    ports:
-    - published: 8001
-      target: 80
   fileprocessordb:
     container_name: fileprocessordb
     image: redis:alpine
@@ -66,21 +32,21 @@ services:
       target: 5601
   nginx:
     depends_on:
-      file-context-ext:
+      sample-frontend-svc:
         condition: service_started
     image: nginx:latest
     ports:
     - published: 4000
       target: 4000
     volumes:
-    - D:\Workspace\dotnet-project-boilerplate-practice\src\nginx.conf:/etc/nginx/nginx.conf:ro
+    - C:\Users\CalvinHow\WorkSpace\dotnet-microservice-boilerplate\src\nginx.conf:/etc/nginx/nginx.conf:ro
   ocelotapigw:
     build:
-      context: D:\Workspace\dotnet-project-boilerplate-practice\src
+      context: C:\Users\CalvinHow\WorkSpace\dotnet-microservice-boilerplate\src
       dockerfile: ApiGateways/OcelotApiGw/Dockerfile
     container_name: ocelotapigw
     depends_on:
-      file-processor:
+      sample-frontend-svc:
         condition: service_started
     environment:
       ASPNETCORE_ENVIRONMENT: Development
@@ -98,6 +64,41 @@ services:
     - published: 15672
       target: 15672
     restart: always
+  sample-backend-svc:
+    build:
+      context: C:\Users\CalvinHow\WorkSpace\dotnet-microservice-boilerplate\src
+      dockerfile: Services/SampleBackendSvc/Dockerfile
+    container_name: sample-backend-svc
+    depends_on:
+      fileprocessordb:
+        condition: service_started
+      rabbitmq:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      CacheSettings:ConnectionString: fileProcessorDb:6379
+      EventBusSettings:HostAddress: amqp://guest:guest@rabbitmq:15672
+    expose:
+    - '8007'
+    image: sample-backend-svc
+  sample-frontend-svc:
+    build:
+      context: C:\Users\CalvinHow\WorkSpace\dotnet-microservice-boilerplate\src
+      dockerfile: Services/SampleFrontendSvc/Dockerfile
+    container_name: sample-frontend-svc
+    depends_on:
+      fileprocessordb:
+        condition: service_started
+      rabbitmq:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      CacheSettings:ConnectionString: fileProcessorDb:6379
+      EventBusSettings:HostAddress: amqp://guest:guest@rabbitmq:15672
+    image: sample-frontend-svc
+    ports:
+    - published: 8006
+      target: 80
 version: '3.4'
 volumes:
   elasticsearch-data: {}

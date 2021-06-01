@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gv0NAxR2zDGTea6VCczMfzzQm+0wL498tuz8WTvM99UA431oL2Ly7m7vEIa0ur96xsYrIjmU9+dhWGF/AQhNJA==",
+  "dgSpecHash": "JGO0Lrp+V05eVYFurxeBCr8+jKAouK04OayOqbPSJctuoCyu1glv+ddyq6jkAq5qH+1/BVJCbiCl0xGNFJ0y1Q==",
   "success": true,
-  "projectFilePath": "D:\\Workspace\\dotnet-project-boilerplate-practice\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj",
+  "projectFilePath": "D:\\Workspace\\sandline-project-boilerplate\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
