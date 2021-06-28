@@ -1,27 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\Services\\SampleFrontendSvc\\SampleFrontendSvc.csproj": {}
+    "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\Services\\SampleFrontendSvc\\SampleFrontendSvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
+    "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
+        "projectUniqueName": "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
         "projectName": "Common.Logging",
-        "projectPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
-        "packagesPath": "C:\\Users\\CalvinHow\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Common.Logging\\obj\\",
+        "projectPath": "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
+        "packagesPath": "C:\\Users\\Calvin\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Common.Logging\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\CalvinHow\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Calvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -71,31 +76,36 @@
         }
       }
     },
-    "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Sandline.RMQLibs\\Sandline.RMQLibs.csproj": {
+    "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Sandline.RMQLibs\\Sandline.RMQLibs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Sandline.RMQLibs\\Sandline.RMQLibs.csproj",
+        "projectUniqueName": "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Sandline.RMQLibs\\Sandline.RMQLibs.csproj",
         "projectName": "Sandline.RMQLibs",
-        "projectPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Sandline.RMQLibs\\Sandline.RMQLibs.csproj",
-        "packagesPath": "C:\\Users\\CalvinHow\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Sandline.RMQLibs\\obj\\",
+        "projectPath": "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Sandline.RMQLibs\\Sandline.RMQLibs.csproj",
+        "packagesPath": "C:\\Users\\Calvin\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Sandline.RMQLibs\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\CalvinHow\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Calvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
-                "projectPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj"
+              "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
+                "projectPath": "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj"
               }
             }
           }
@@ -138,34 +148,39 @@
         }
       }
     },
-    "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\Services\\SampleFrontendSvc\\SampleFrontendSvc.csproj": {
+    "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\Services\\SampleFrontendSvc\\SampleFrontendSvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\Services\\SampleFrontendSvc\\SampleFrontendSvc.csproj",
+        "projectUniqueName": "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\Services\\SampleFrontendSvc\\SampleFrontendSvc.csproj",
         "projectName": "SampleFrontendSvc",
-        "projectPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\Services\\SampleFrontendSvc\\SampleFrontendSvc.csproj",
-        "packagesPath": "C:\\Users\\CalvinHow\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\Services\\SampleFrontendSvc\\obj\\",
+        "projectPath": "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\Services\\SampleFrontendSvc\\SampleFrontendSvc.csproj",
+        "packagesPath": "C:\\Users\\Calvin\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\Services\\SampleFrontendSvc\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\CalvinHow\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Calvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
-                "projectPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj"
+              "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj": {
+                "projectPath": "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj"
               },
-              "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Sandline.RMQLibs\\Sandline.RMQLibs.csproj": {
-                "projectPath": "C:\\Users\\CalvinHow\\WorkSpace\\sandline-project-boilerplate\\src\\BuildingBlocks\\Sandline.RMQLibs\\Sandline.RMQLibs.csproj"
+              "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Sandline.RMQLibs\\Sandline.RMQLibs.csproj": {
+                "projectPath": "D:\\Git\\Workspace\\dotnet-microservice-boilerplate\\src\\BuildingBlocks\\Sandline.RMQLibs\\Sandline.RMQLibs.csproj"
               }
             }
           }

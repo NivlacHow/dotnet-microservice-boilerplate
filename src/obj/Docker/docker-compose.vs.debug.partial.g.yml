@@ -13,9 +13,9 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_ocelotapigw$
     volumes:
-      - C:\Users\CalvinHow\WorkSpace\dotnet-microservice-boilerplate\src\ApiGateways\OcelotApiGw:/app
-      - C:\Users\CalvinHow\WorkSpace\dotnet-microservice-boilerplate\src:/src
-      - C:\Users\CalvinHow\vsdbg\vs2017u5:/remote_debugger:rw
+      - D:\Git\Workspace\dotnet-microservice-boilerplate\src\ApiGateways\OcelotApiGw:/app
+      - D:\Git\Workspace\dotnet-microservice-boilerplate\src:/src
+      - C:\Users\Calvin\vsdbg\vs2017u5:/remote_debugger:rw
 #$nuget_volume_mapping_ocelotapigw$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
@@ -39,9 +39,9 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_sample-backend-svc$
     volumes:
-      - C:\Users\CalvinHow\WorkSpace\dotnet-microservice-boilerplate\src\Services\SampleBackendSvc:/app
-      - C:\Users\CalvinHow\WorkSpace\dotnet-microservice-boilerplate\src:/src
-      - C:\Users\CalvinHow\vsdbg\vs2017u5:/remote_debugger:rw
+      - D:\Git\Workspace\dotnet-microservice-boilerplate\src\Services\SampleBackendSvc:/app
+      - D:\Git\Workspace\dotnet-microservice-boilerplate\src:/src
+      - C:\Users\Calvin\vsdbg\vs2017u5:/remote_debugger:rw
 #$nuget_volume_mapping_sample-backend-svc$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
@@ -49,7 +49,7 @@ services:
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_sample-backend-svc$ \"\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_sample-backend-svc$ \"/app/bin/Debug/net5.0/SampleBackendSvc.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
@@ -66,9 +66,9 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_sample-frontend-svc$
     volumes:
-      - C:\Users\CalvinHow\WorkSpace\dotnet-microservice-boilerplate\src\Services\SampleFrontendSvc:/app
-      - C:\Users\CalvinHow\WorkSpace\dotnet-microservice-boilerplate\src:/src
-      - C:\Users\CalvinHow\vsdbg\vs2017u5:/remote_debugger:rw
+      - D:\Git\Workspace\dotnet-microservice-boilerplate\src\Services\SampleFrontendSvc:/app
+      - D:\Git\Workspace\dotnet-microservice-boilerplate\src:/src
+      - C:\Users\Calvin\vsdbg\vs2017u5:/remote_debugger:rw
 #$nuget_volume_mapping_sample-frontend-svc$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
@@ -76,7 +76,7 @@ services:
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_sample-frontend-svc$ \"\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_sample-frontend-svc$ \"/app/bin/Debug/net5.0/SampleFrontendSvc.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true

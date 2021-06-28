@@ -58,3 +58,15 @@ D:\Workspace\sandline-project-boilerplate\src\BuildingBlocks\Common.Logging\obj\
 D:\Workspace\sandline-project-boilerplate\src\BuildingBlocks\Common.Logging\obj\Debug\net5.0\Common.Logging.dll
 D:\Workspace\sandline-project-boilerplate\src\BuildingBlocks\Common.Logging\obj\Debug\net5.0\ref\Common.Logging.dll
 D:\Workspace\sandline-project-boilerplate\src\BuildingBlocks\Common.Logging\obj\Debug\net5.0\Common.Logging.pdb
+D:\Git\Workspace\dotnet-microservice-boilerplate\src\BuildingBlocks\Common.Logging\bin\Debug\net5.0\Common.Logging.deps.json
+D:\Git\Workspace\dotnet-microservice-boilerplate\src\BuildingBlocks\Common.Logging\bin\Debug\net5.0\Common.Logging.dll
+D:\Git\Workspace\dotnet-microservice-boilerplate\src\BuildingBlocks\Common.Logging\bin\Debug\net5.0\ref\Common.Logging.dll
+D:\Git\Workspace\dotnet-microservice-boilerplate\src\BuildingBlocks\Common.Logging\bin\Debug\net5.0\Common.Logging.pdb
+D:\Git\Workspace\dotnet-microservice-boilerplate\src\BuildingBlocks\Common.Logging\obj\Debug\net5.0\Common.Logging.csprojAssemblyReference.cache
+D:\Git\Workspace\dotnet-microservice-boilerplate\src\BuildingBlocks\Common.Logging\obj\Debug\net5.0\Common.Logging.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\Workspace\dotnet-microservice-boilerplate\src\BuildingBlocks\Common.Logging\obj\Debug\net5.0\Common.Logging.AssemblyInfoInputs.cache
+D:\Git\Workspace\dotnet-microservice-boilerplate\src\BuildingBlocks\Common.Logging\obj\Debug\net5.0\Common.Logging.AssemblyInfo.cs
+D:\Git\Workspace\dotnet-microservice-boilerplate\src\BuildingBlocks\Common.Logging\obj\Debug\net5.0\Common.Logging.csproj.CoreCompileInputs.cache
+D:\Git\Workspace\dotnet-microservice-boilerplate\src\BuildingBlocks\Common.Logging\obj\Debug\net5.0\Common.Logging.dll
+D:\Git\Workspace\dotnet-microservice-boilerplate\src\BuildingBlocks\Common.Logging\obj\Debug\net5.0\ref\Common.Logging.dll
+D:\Git\Workspace\dotnet-microservice-boilerplate\src\BuildingBlocks\Common.Logging\obj\Debug\net5.0\Common.Logging.pdb
